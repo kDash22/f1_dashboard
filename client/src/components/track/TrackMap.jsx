@@ -10,8 +10,9 @@ function TrackMap() {
           <div className="absolute inset-20 rounded-full border-8">
             {cars.map((car) => (
               <div
-                className="absoulute"
-                style={{ left: `${car.x}%`, top: `${car.y}` }}
+                key={car.code}
+                className="absolute"
+                style={{ left: `${car.x}%`, top: `${car.y}%` }}
               >
                 {car.code}
               </div>

@@ -1,4 +1,4 @@
-function RaceEvent(event) {
+function RaceEvent({ event }) {
   return (
     <>
       <div>

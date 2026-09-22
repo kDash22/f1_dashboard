@@ -117,6 +117,7 @@ export const selectedDriver = {
   s1: 33.0,
   s2: 32.361,
   s3: 31.555,
+  status: "RUNNING",
 };
 
 export const strategy = [
@@ -176,5 +177,5 @@ export const raceEvents = [
 export const cars = [
   { code: "VER", x: 30, y: 40 },
   { code: "NOR", x: 60, y: 25 },
-  { code: "LEC", x: 45, y: 70 },
+  { code: "LEC", x: 4, y: 70 },
 ];
