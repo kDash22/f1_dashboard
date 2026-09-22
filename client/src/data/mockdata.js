@@ -7,7 +7,7 @@ export const raceInfo = {
   temperature: 24,
   trackTemperature: 39,
   weather: "Clear",
-}
+};
 
 export const drivers = [
   {
@@ -110,9 +110,14 @@ export const drivers = [
     tyre: "SOFT",
     tyreAge: 7,
   },
-]
+];
 
-export const selectedDriver = drivers[1]
+export const selectedDriver = {
+  ...drivers[1],
+  s1: 33.0,
+  s2: 32.361,
+  s3: 31.555,
+};
 
 export const strategy = [
   {
@@ -143,7 +148,7 @@ export const strategy = [
       { tyre: "MEDIUM", laps: 20 },
     ],
   },
-]
+];
 
 export const raceEvents = [
   {
@@ -166,4 +171,4 @@ export const raceEvents = [
     type: "YELLOW FLAG",
     message: "Yellow flag in Sector 2",
   },
-]
+];

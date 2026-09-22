@@ -13,9 +13,9 @@ function TimingTable() {
         <span>LAST LAP</span>
       </div>
 
-      {drivers.map((driver) => {
-        <DriverRow key={driver.pos} driver={driver} />;
-      })}
+      {drivers.map((driver) => (
+        <DriverRow key={driver.pos} driver={driver} />
+      ))}
     </>
   );
 }
