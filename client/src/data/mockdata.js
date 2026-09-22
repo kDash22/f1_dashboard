@@ -172,3 +172,9 @@ export const raceEvents = [
     message: "Yellow flag in Sector 2",
   },
 ];
+
+export const cars = [
+  { code: "VER", x: 30, y: 40 },
+  { code: "NOR", x: 60, y: 25 },
+  { code: "LEC", x: 45, y: 70 },
+];
