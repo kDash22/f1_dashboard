@@ -5,7 +5,7 @@ const selectedStratagey = strategy[1];
 function DriverPanel() {
   return (
     <>
-      <section>
+      <section className="border-2 p-2">
         <h2>
           {selectedDriver.code} {selectedDriver.name}
         </h2>
@@ -16,7 +16,7 @@ function DriverPanel() {
         </div>
 
         {/*Horizontal bar */}
-        <div>
+        <div className="border-t-2">
           <span>Position </span>
           <span>{selectedDriver.position}</span>
         </div>
@@ -43,7 +43,7 @@ function DriverPanel() {
         </div>
 
         {/* horizontal bar */}
-        <div>
+        <div className="border-t-2">
           <span>Strategy </span>
           <span>
             {selectedStratagey.stints.map((stint, index) => (
@@ -56,7 +56,7 @@ function DriverPanel() {
         </div>
 
         {/*horizontal bar */}
-        <div>
+        <div className="border-t-2">
           <span>Sector 1 </span>
           <span>{selectedDriver.s1}</span>
         </div>

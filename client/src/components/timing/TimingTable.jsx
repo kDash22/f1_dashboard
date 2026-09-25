@@ -4,19 +4,22 @@ import DriverRow from "./DriverRow";
 function TimingTable() {
   return (
     <>
-      <div>
-        <div className="grid grid-cols-[50px_1fr_120px_120px_150px]">
+      <section className="border-2 p-2">
+        <div className="grid grid-cols-[5%_25%_12%_12%_15%_12%_12%_7%] text-[.95rem]">
           <span>POS</span>
           <span>DRIVER </span>
-          <span>GAP</span>
+          <span>LEADER</span>
+          <span>GAP AHEAD</span>
           <span>TYRE</span>
           <span>LAST LAP</span>
+          <span>BEST LAP</span>
+          <span>PIT</span>
         </div>
 
         {drivers.map((driver) => (
           <DriverRow key={driver.pos} driver={driver} />
         ))}
-      </div>
+      </section>
     </>
   );
 }

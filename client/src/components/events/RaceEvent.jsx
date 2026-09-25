@@ -1,10 +1,10 @@
 function RaceEvent({ event }) {
   return (
     <>
-      <div>
+      <div className="border-2 p-1">
         <div>
-          <span>{event.lap}</span>
-          <span>{event.type}</span>
+          <span>L {event.lap}</span>
+          <span> {event.type}</span>
         </div>
         <span>{event.message}</span>
       </div>
